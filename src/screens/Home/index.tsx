@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Conteiner,
+    Container,
     Header,
     Icon,
     UserAvatar,
@@ -16,7 +16,7 @@ import avatarDefault from '../../assets/avatar02.png';
 
 export const Home: React.FunctionComponent = () => {
     return (
-        <Conteiner>
+        <Container>
             <Header>
                 <UserWrapper>
                     <UserInfo>
@@ -31,6 +31,6 @@ export const Home: React.FunctionComponent = () => {
                     <Icon name="power" />
                 </UserWrapper>
             </Header>
-        </Conteiner>
+        </Container>
     );
 };
