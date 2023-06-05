@@ -10,6 +10,7 @@ import {
 
 import theme from './src/global/styles/theme';
 import AppLoading from 'expo-app-loading';
+import { SignIn } from './src/screens/SignIn';
 
 const App: React.FunctionComponent = () => {
     const [fontsLoaded] = useFonts({
@@ -23,7 +24,8 @@ const App: React.FunctionComponent = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Home />
+            {/* <Home /> */}
+            <SignIn />
         </ThemeProvider>
     );
 };
