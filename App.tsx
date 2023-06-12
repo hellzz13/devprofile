@@ -1,7 +1,6 @@
 import React from 'react';
-
 import { ThemeProvider } from 'styled-components';
-import { Home } from './src/screens/Home';
+
 import {
     useFonts,
     Roboto_400Regular,
