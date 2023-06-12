@@ -1,6 +1,6 @@
 import { TextInput } from 'react-native';
 import styled from 'styled-components/native';
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 //[takecare] we need to import TextInput to use external props
 // or use external components

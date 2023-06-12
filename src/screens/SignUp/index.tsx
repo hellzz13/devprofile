@@ -4,7 +4,7 @@ import { Input } from '../../components/Form/Input';
 import { ScrollView } from 'react-native';
 import { Button } from '../../components/Form/Button';
 
-export const SignIn: React.FunctionComponent = () => {
+export const SignUp: React.FunctionComponent = () => {
     return (
         <ScrollView
             keyboardShouldPersistTaps="handled"
@@ -12,12 +12,13 @@ export const SignIn: React.FunctionComponent = () => {
         >
             <Container>
                 <Content>
-                    <Title> Faça seu Login</Title>
+                    <Title> Cadastre-se</Title>
 
+                    <Input placeholder="Nome completo" />
                     <Input placeholder="Email" />
                     <Input placeholder="Senha" />
 
-                    <Button title="Entrar" />
+                    <Button title="Cadastrar" />
                 </Content>
             </Container>
         </ScrollView>

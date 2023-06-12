@@ -10,7 +10,9 @@ import {
 
 import theme from './src/global/styles/theme';
 import AppLoading from 'expo-app-loading';
-import { SignIn } from './src/screens/SignIn';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { Routes } from './src/routes';
 
 const App: React.FunctionComponent = () => {
     const [fontsLoaded] = useFonts({
@@ -23,10 +25,11 @@ const App: React.FunctionComponent = () => {
     }
 
     return (
-        <ThemeProvider theme={theme}>
-            {/* <Home /> */}
-            <SignIn />
-        </ThemeProvider>
+        <NavigationContainer>
+            <ThemeProvider theme={theme}>
+                <Routes />
+            </ThemeProvider>
+        </NavigationContainer>
     );
 };
 
